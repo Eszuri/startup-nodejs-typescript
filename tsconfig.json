@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es2020",
-        "module": "commonjs",
+        "target": "es2022",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "baseUrl": ".",
         "rootDir": "src",
         "outDir": "build",
         "strict": true,
@@ -12,7 +14,12 @@
         "resolveJsonModule": true,
         "forceConsistentCasingInFileNames": true,
         "sourceMap": false,
-        "declaration": false
+        "declaration": false,
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
     },
     "include": [
         "src"

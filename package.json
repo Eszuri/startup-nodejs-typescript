@@ -1,10 +1,10 @@
 {
-    "name": "Project-Name",
+    "name": "project-name",
     "version": "1.0.0",
     "description": "",
-    "type": "commonjs",
+    "type": "module",
     "scripts": {
-        "dev": "tsx watch src/index.ts",
+        "dev": "tsx watch --env-file .env src/index.ts",
         "typecheck": "tsc --noEmit",
         "build": "tsup src/index.ts",
         "start": "node build/index.js"
@@ -13,7 +13,12 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@types/node": "^25.0.3",
+        "tsup": "^8.5.1",
         "tsx": "^4.21.0",
         "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.3"
     }
 }
