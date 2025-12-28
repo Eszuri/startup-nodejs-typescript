@@ -1,0 +1,19 @@
+{
+    "name": "Project-Name",
+    "version": "1.0.0",
+    "description": "",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "typecheck": "tsc --noEmit",
+        "build": "tsup src/index.ts",
+        "start": "node build/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    }
+}
