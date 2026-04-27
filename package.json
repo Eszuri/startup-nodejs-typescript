@@ -5,6 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "tsx watch --env-file .env src/index.ts",
+        "test": "tsx --env-file .env src/index.ts",
         "typecheck": "tsc --noEmit",
         "build": "tsup src/index.ts",
         "start": "node build/index.js"

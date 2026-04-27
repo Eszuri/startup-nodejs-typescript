@@ -1,3 +1,3 @@
-import "dotenv/config"; // please don't remove
+import "dotenv/config"; // don't forget to import dotenv
 
-console.log(process.env.NAME ?? "Hello World")
+console.log(process.env.NAME);
